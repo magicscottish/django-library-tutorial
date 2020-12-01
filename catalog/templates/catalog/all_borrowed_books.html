@@ -7,7 +7,7 @@
   <ul>
     <li>
       <a href="{% url 'book-detail' bookinst.book.pk %}">{{ bookinst.book.title }}</a> <small>ID: {{ bookinst.id }}</small>
-      <p><span style="margin-left: 3%; {% if bookinst.is_overdue %}color:red;{% endif %}">Due Back {{ bookinst.due_back }}</span> - Borrowed by {{ bookinst.borrower }} {% if perms.catalog.can_renew %}- <a href="{% url 'renew-book-librarian' bookinst.id %}">Renew</a>{% endif %}</p>
+      <p><span style="margin-left: 5%; {% if bookinst.is_overdue %}color:red;{% endif %}">Due Back {{ bookinst.due_back }}</span> - Borrowed by {{ bookinst.borrower }} {% if perms.catalog.can_renew %}- <a href="{% url 'renew-book-librarian' bookinst.id %}">Renew</a>{% endif %}</p>
     </li>
   </ul>
   {% endfor %}
