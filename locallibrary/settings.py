@@ -30,6 +30,7 @@ DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
 ALLOWED_HOSTS = [
     'cryptic-meadow-03490.herokuapp.com',
+    '127.0.0.1',
 ]
 
 
