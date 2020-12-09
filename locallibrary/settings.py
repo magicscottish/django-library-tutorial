@@ -28,7 +28,9 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '+nfz7k0@440n_bn=((5(j7h0#2x&)8
 #DEBUG = True
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    cryptic-meadow-03490.herokuapp.com,
+]
 
 
 # Application definition
